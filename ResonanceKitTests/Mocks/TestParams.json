@@ -1,0 +1,25 @@
+
+[
+    {
+        "request": {
+            "param1": "value1",
+            "param2": "value2"
+        },
+        "method": "GET",
+        "status": 200,
+        "response": {
+            "value": 55
+        }
+    },
+    {
+        "request": {
+            "param1": "value1",
+            "param2": "value2"
+        },
+        "method": "POST",
+        "status": 200,
+        "response": {
+            "value": 55
+        }
+    }
+]

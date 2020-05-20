@@ -1,0 +1,19 @@
+[
+    {
+        "request": {},
+        "status": 200,
+        "method": "firebase",
+        "response": {
+            "avg_pickup_time" : 3.0,
+            "message" : "Operating normally.",
+            "num_bike_rack_equipped_drivers" : 6,
+            "num_drivers" : 15,
+            "num_drivers_online" : 15,
+            "num_drivers_paused" : 0,
+            "num_lift_equipped_drivers" : 6,
+            "service_available" : true,
+            "service_state" : "Normal",
+            "show_message" : false
+        }
+    }
+]

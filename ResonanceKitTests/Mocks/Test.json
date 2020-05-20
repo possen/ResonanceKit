@@ -1,0 +1,9 @@
+[{
+    "request": {},
+    "status": 200,
+    "method": "GET",
+    "response": {
+        "value": 10
+    }
+}
+]

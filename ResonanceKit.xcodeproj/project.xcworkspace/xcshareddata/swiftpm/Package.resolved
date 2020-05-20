@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftCoroutine",
+        "repositoryURL": "git@github.com:belozierov/SwiftCoroutine.git",
+        "state": {
+          "branch": null,
+          "revision": "5585403f765fcfdb21785eba5dc01c74c2bc59c5",
+          "version": "2.1.2"
+        }
+      },
+      {
+        "package": "SwiftyBeaverKit",
+        "repositoryURL": "git@github.com:possen/SwiftyBeaver.git",
+        "state": {
+          "branch": "master",
+          "revision": "483a13c1daaf6124a972f2e54b1627bb375e1289",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
