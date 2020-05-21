@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5232C502475F92B00236FFD /* RESTKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C2E2475F92B00236FFD /* RESTKitTests.swift */; };
-		D5232C542475F92B00236FFD /* RiderTestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C302475F92B00236FFD /* RiderTestBase.swift */; };
+		D5232C502475F92B00236FFD /* ResonanceKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C2E2475F92B00236FFD /* ResonanceKitTests.swift */; };
+		D5232C542475F92B00236FFD /* TestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C302475F92B00236FFD /* TestBase.swift */; };
 		D5232C552475F92B00236FFD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D5232C312475F92B00236FFD /* .gitignore */; };
 		D5232C562475F92B00236FFD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D5232C312475F92B00236FFD /* .gitignore */; };
 		D5232C592475F92B00236FFD /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C352475F92B00236FFD /* ImageCache.swift */; };
@@ -37,9 +37,9 @@
 
 /* Begin PBXFileReference section */
 		D5232C172475F73C00236FFD /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		D5232C2E2475F92B00236FFD /* RESTKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTKitTests.swift; sourceTree = "<group>"; };
+		D5232C2E2475F92B00236FFD /* ResonanceKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResonanceKitTests.swift; sourceTree = "<group>"; };
 		D5232C2F2475F92B00236FFD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5232C302475F92B00236FFD /* RiderTestBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderTestBase.swift; sourceTree = "<group>"; };
+		D5232C302475F92B00236FFD /* TestBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestBase.swift; sourceTree = "<group>"; };
 		D5232C312475F92B00236FFD /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		D5232C352475F92B00236FFD /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		D5232C362475F92B00236FFD /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				D5232C672475FA5300236FFD /* Mocks */,
-				D5232C2E2475F92B00236FFD /* RESTKitTests.swift */,
+				D5232C2E2475F92B00236FFD /* ResonanceKitTests.swift */,
 				D5232C2F2475F92B00236FFD /* Info.plist */,
-				D5232C302475F92B00236FFD /* RiderTestBase.swift */,
+				D5232C302475F92B00236FFD /* TestBase.swift */,
 			);
 			path = ResonanceKitTests;
 			sourceTree = "<group>";
@@ -279,8 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5232C502475F92B00236FFD /* RESTKitTests.swift in Sources */,
-				D5232C542475F92B00236FFD /* RiderTestBase.swift in Sources */,
+				D5232C502475F92B00236FFD /* ResonanceKitTests.swift in Sources */,
+				D5232C542475F92B00236FFD /* TestBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
