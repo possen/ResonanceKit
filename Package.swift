@@ -16,12 +16,12 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/belozierov/SwiftCoroutine.git", from: "2.1.2"),
-        .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", .upToNextMajor(from: "1.7.0"))
+        .package(url: "https://github.com/possen/SwiftyBeaver.git", .branch("master"))
     ],
     targets: [
         .target(
             name: "ResonanceKit",
-            dependencies: ["SwiftCoroutine", "SwiftyBeaver"]
+            dependencies: ["SwiftCoroutine", "SwiftyBeaverKit"]
         ),
         .testTarget(
             name: "ResonanceKitTests",

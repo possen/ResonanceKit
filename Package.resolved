@@ -11,12 +11,12 @@
         }
       },
       {
-        "package": "SwiftyBeaver",
-        "repositoryURL": "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
+        "package": "SwiftyBeaverKit",
+        "repositoryURL": "https://github.com/possen/SwiftyBeaver.git",
         "state": {
-          "branch": null,
-          "revision": "e0fb3a74cb993d7dcf1e56734cdc98ad6e6d8176",
-          "version": "1.9.1"
+          "branch": "master",
+          "revision": "483a13c1daaf6124a972f2e54b1627bb375e1289",
+          "version": null
         }
       }
     ]
