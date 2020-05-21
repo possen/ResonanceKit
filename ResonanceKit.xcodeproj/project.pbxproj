@@ -7,18 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5C17543247506BE00A546C2 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C17542247506BE00A546C2 /* ImageCache.swift */; };
-		DCD636BC2473B0E200967328 /* JSONMockServerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD636BB2473B0E200967328 /* JSONMockServerSession.swift */; };
-		DCD636BF2473B0EC00967328 /* JSONMockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD636BE2473B0EC00967328 /* JSONMockServer.swift */; };
-		DCD636C02473B0EC00967328 /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD636BD2473B0EC00967328 /* JSONRequest.swift */; };
-		DCD636C22473B0F400967328 /* URLRequest+Curl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD636C12473B0F400967328 /* URLRequest+Curl.swift */; };
+		D5232C502475F92B00236FFD /* RESTKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C2E2475F92B00236FFD /* RESTKitTests.swift */; };
+		D5232C542475F92B00236FFD /* RiderTestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C302475F92B00236FFD /* RiderTestBase.swift */; };
+		D5232C552475F92B00236FFD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D5232C312475F92B00236FFD /* .gitignore */; };
+		D5232C562475F92B00236FFD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D5232C312475F92B00236FFD /* .gitignore */; };
+		D5232C592475F92B00236FFD /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C352475F92B00236FFD /* ImageCache.swift */; };
+		D5232C5B2475F92B00236FFD /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C362475F92B00236FFD /* Logger.swift */; };
+		D5232C5D2475F92B00236FFD /* URLRequest+Curl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C372475F92B00236FFD /* URLRequest+Curl.swift */; };
+		D5232C5F2475F92B00236FFD /* JSONMockServerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C382475F92B00236FFD /* JSONMockServerSession.swift */; };
+		D5232C612475F92B00236FFD /* JSONMockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C392475F92B00236FFD /* JSONMockServer.swift */; };
+		D5232C632475F92B00236FFD /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C3A2475F92B00236FFD /* JSONRequest.swift */; };
+		D5232C682475FA5300236FFD /* Mocks in Resources */ = {isa = PBXBuildFile; fileRef = D5232C672475FA5300236FFD /* Mocks */; };
+		D5232C692475FA5300236FFD /* Mocks in Resources */ = {isa = PBXBuildFile; fileRef = D5232C672475FA5300236FFD /* Mocks */; };
 		DCD636C52473B1E900967328 /* SwiftCoroutine in Frameworks */ = {isa = PBXBuildFile; productRef = DCD636C42473B1E900967328 /* SwiftCoroutine */; };
-		DCD636C72473B3A100967328 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD636C62473B3A100967328 /* Logger.swift */; };
 		DCD636CD2473B51B00967328 /* SwiftyBeaverKit in Frameworks */ = {isa = PBXBuildFile; productRef = DCD636CC2473B51B00967328 /* SwiftyBeaverKit */; };
-		DCD636D52473BF0100967328 /* RESTKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD636D42473BF0100967328 /* RESTKitTests.swift */; };
 		DCD636D72473BF0200967328 /* ResonanceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD636B02473B0B400967328 /* ResonanceKit.framework */; };
-		DCD636DE2473BFE500967328 /* RiderTestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD636DD2473BFE500967328 /* RiderTestBase.swift */; };
-		DCD637DC2473C2EC00967328 /* Mocks in Resources */ = {isa = PBXBuildFile; fileRef = DCD637DB2473C2EC00967328 /* Mocks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,19 +35,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D5C17542247506BE00A546C2 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		D5232C172475F73C00236FFD /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		D5232C2E2475F92B00236FFD /* RESTKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTKitTests.swift; sourceTree = "<group>"; };
+		D5232C2F2475F92B00236FFD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5232C302475F92B00236FFD /* RiderTestBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiderTestBase.swift; sourceTree = "<group>"; };
+		D5232C312475F92B00236FFD /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D5232C352475F92B00236FFD /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		D5232C362475F92B00236FFD /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		D5232C372475F92B00236FFD /* URLRequest+Curl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Curl.swift"; sourceTree = "<group>"; };
+		D5232C382475F92B00236FFD /* JSONMockServerSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONMockServerSession.swift; sourceTree = "<group>"; };
+		D5232C392475F92B00236FFD /* JSONMockServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONMockServer.swift; sourceTree = "<group>"; };
+		D5232C3A2475F92B00236FFD /* JSONRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONRequest.swift; sourceTree = "<group>"; };
+		D5232C3B2475F92B00236FFD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5232C672475FA5300236FFD /* Mocks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Mocks; sourceTree = "<group>"; };
 		DCD636B02473B0B400967328 /* ResonanceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ResonanceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCD636B42473B0B400967328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD636BB2473B0E200967328 /* JSONMockServerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMockServerSession.swift; sourceTree = "<group>"; };
-		DCD636BD2473B0EC00967328 /* JSONRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONRequest.swift; sourceTree = "<group>"; };
-		DCD636BE2473B0EC00967328 /* JSONMockServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMockServer.swift; sourceTree = "<group>"; };
-		DCD636C12473B0F400967328 /* URLRequest+Curl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Curl.swift"; sourceTree = "<group>"; };
-		DCD636C62473B3A100967328 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		DCD636D22473BF0100967328 /* ResonanceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResonanceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCD636D42473BF0100967328 /* RESTKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTKitTests.swift; sourceTree = "<group>"; };
-		DCD636D62473BF0100967328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCD636DD2473BFE500967328 /* RiderTestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiderTestBase.swift; sourceTree = "<group>"; };
-		DCD637DB2473C2EC00967328 /* Mocks */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Mocks; path = ../../RideCore/Mocks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +73,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5232C192475F92B00236FFD /* ResonanceKit */ = {
+			isa = PBXGroup;
+			children = (
+				D5232C312475F92B00236FFD /* .gitignore */,
+				D5232C332475F92B00236FFD /* Sources */,
+				D5232C1F2475F92B00236FFD /* Tests */,
+			);
+			name = ResonanceKit;
+			sourceTree = "<group>";
+		};
+		D5232C1F2475F92B00236FFD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D5232C202475F92B00236FFD /* ResonanceKitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D5232C202475F92B00236FFD /* ResonanceKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				D5232C672475FA5300236FFD /* Mocks */,
+				D5232C2E2475F92B00236FFD /* RESTKitTests.swift */,
+				D5232C2F2475F92B00236FFD /* Info.plist */,
+				D5232C302475F92B00236FFD /* RiderTestBase.swift */,
+			);
+			path = ResonanceKitTests;
+			sourceTree = "<group>";
+		};
+		D5232C332475F92B00236FFD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D5232C342475F92B00236FFD /* ResonanceKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D5232C342475F92B00236FFD /* ResonanceKit */ = {
+			isa = PBXGroup;
+			children = (
+				D5232C352475F92B00236FFD /* ImageCache.swift */,
+				D5232C362475F92B00236FFD /* Logger.swift */,
+				D5232C372475F92B00236FFD /* URLRequest+Curl.swift */,
+				D5232C382475F92B00236FFD /* JSONMockServerSession.swift */,
+				D5232C392475F92B00236FFD /* JSONMockServer.swift */,
+				D5232C3A2475F92B00236FFD /* JSONRequest.swift */,
+				D5232C3B2475F92B00236FFD /* Info.plist */,
+			);
+			path = ResonanceKit;
+			sourceTree = "<group>";
+		};
 		DCD636A62473B0B400967328 = {
 			isa = PBXGroup;
 			children = (
-				DCD636B22473B0B400967328 /* ResonanceKit */,
-				DCD636D32473BF0100967328 /* ResonanceKitTests */,
+				D5232C172475F73C00236FFD /* Package.swift */,
+				D5232C192475F92B00236FFD /* ResonanceKit */,
 				DCD636B12473B0B400967328 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,31 +140,6 @@
 				DCD636D22473BF0100967328 /* ResonanceKitTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DCD636B22473B0B400967328 /* ResonanceKit */ = {
-			isa = PBXGroup;
-			children = (
-				DCD636BB2473B0E200967328 /* JSONMockServerSession.swift */,
-				DCD636BE2473B0EC00967328 /* JSONMockServer.swift */,
-				DCD636BD2473B0EC00967328 /* JSONRequest.swift */,
-				DCD636C12473B0F400967328 /* URLRequest+Curl.swift */,
-				D5C17542247506BE00A546C2 /* ImageCache.swift */,
-				DCD636C62473B3A100967328 /* Logger.swift */,
-				DCD636B42473B0B400967328 /* Info.plist */,
-			);
-			path = ResonanceKit;
-			sourceTree = "<group>";
-		};
-		DCD636D32473BF0100967328 /* ResonanceKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				DCD637DB2473C2EC00967328 /* Mocks */,
-				DCD636D42473BF0100967328 /* RESTKitTests.swift */,
-				DCD636DD2473BFE500967328 /* RiderTestBase.swift */,
-				DCD636D62473BF0100967328 /* Info.plist */,
-			);
-			path = ResonanceKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5232C682475FA5300236FFD /* Mocks in Resources */,
+				D5232C552475F92B00236FFD /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD637DC2473C2EC00967328 /* Mocks in Resources */,
+				D5232C692475FA5300236FFD /* Mocks in Resources */,
+				D5232C562475F92B00236FFD /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,12 +262,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C17543247506BE00A546C2 /* ImageCache.swift in Sources */,
-				DCD636C72473B3A100967328 /* Logger.swift in Sources */,
-				DCD636BF2473B0EC00967328 /* JSONMockServer.swift in Sources */,
-				DCD636C22473B0F400967328 /* URLRequest+Curl.swift in Sources */,
-				DCD636BC2473B0E200967328 /* JSONMockServerSession.swift in Sources */,
-				DCD636C02473B0EC00967328 /* JSONRequest.swift in Sources */,
+				D5232C5D2475F92B00236FFD /* URLRequest+Curl.swift in Sources */,
+				D5232C592475F92B00236FFD /* ImageCache.swift in Sources */,
+				D5232C5B2475F92B00236FFD /* Logger.swift in Sources */,
+				D5232C612475F92B00236FFD /* JSONMockServer.swift in Sources */,
+				D5232C5F2475F92B00236FFD /* JSONMockServerSession.swift in Sources */,
+				D5232C632475F92B00236FFD /* JSONRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,8 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCD636D52473BF0100967328 /* RESTKitTests.swift in Sources */,
-				DCD636DE2473BFE500967328 /* RiderTestBase.swift in Sources */,
+				D5232C502475F92B00236FFD /* RESTKitTests.swift in Sources */,
+				D5232C542475F92B00236FFD /* RiderTestBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +420,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ResonanceKit/Info.plist;
+				INFOPLIST_FILE = Sources/ResonanceKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -410,7 +444,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ResonanceKit/Info.plist;
+				INFOPLIST_FILE = Sources/ResonanceKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -430,7 +464,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VAJ22W7C3A;
-				INFOPLIST_FILE = ResonanceKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/ResonanceKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +482,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VAJ22W7C3A;
-				INFOPLIST_FILE = ResonanceKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/ResonanceKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

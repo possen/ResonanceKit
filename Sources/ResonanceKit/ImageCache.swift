@@ -5,7 +5,7 @@
 //  Created by Paul Ossenbruggen on 2/23/20.
 //
 
-import UIKit.UIImage
+import UIKit
 
 // simple in memory cache that will purge oldest if it grows larger than cacheSize
 // threadsafe updates to cache structure and does purging in the utilty QOS.
