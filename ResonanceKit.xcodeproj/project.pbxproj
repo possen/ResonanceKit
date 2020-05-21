@@ -19,6 +19,7 @@
 		D5232C632475F92B00236FFD /* JSONRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C3A2475F92B00236FFD /* JSONRequest.swift */; };
 		D5232C682475FA5300236FFD /* Mocks in Resources */ = {isa = PBXBuildFile; fileRef = D5232C672475FA5300236FFD /* Mocks */; };
 		D5232C692475FA5300236FFD /* Mocks in Resources */ = {isa = PBXBuildFile; fileRef = D5232C672475FA5300236FFD /* Mocks */; };
+		D5232C6E2475FFDC00236FFD /* JSONSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5232C6D2475FFDC00236FFD /* JSONSession.swift */; };
 		DCD636C52473B1E900967328 /* SwiftCoroutine in Frameworks */ = {isa = PBXBuildFile; productRef = DCD636C42473B1E900967328 /* SwiftCoroutine */; };
 		DCD636CD2473B51B00967328 /* SwiftyBeaverKit in Frameworks */ = {isa = PBXBuildFile; productRef = DCD636CC2473B51B00967328 /* SwiftyBeaverKit */; };
 		DCD636D72473BF0200967328 /* ResonanceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD636B02473B0B400967328 /* ResonanceKit.framework */; };
@@ -48,6 +49,7 @@
 		D5232C3A2475F92B00236FFD /* JSONRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONRequest.swift; sourceTree = "<group>"; };
 		D5232C3B2475F92B00236FFD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5232C672475FA5300236FFD /* Mocks */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Mocks; sourceTree = "<group>"; };
+		D5232C6D2475FFDC00236FFD /* JSONSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSession.swift; sourceTree = "<group>"; };
 		DCD636B02473B0B400967328 /* ResonanceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ResonanceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD636D22473BF0100967328 /* ResonanceKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResonanceKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				D5232C382475F92B00236FFD /* JSONMockServerSession.swift */,
 				D5232C392475F92B00236FFD /* JSONMockServer.swift */,
 				D5232C3A2475F92B00236FFD /* JSONRequest.swift */,
+				D5232C6D2475FFDC00236FFD /* JSONSession.swift */,
 				D5232C3B2475F92B00236FFD /* Info.plist */,
 			);
 			path = ResonanceKit;
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5232C6E2475FFDC00236FFD /* JSONSession.swift in Sources */,
 				D5232C5D2475F92B00236FFD /* URLRequest+Curl.swift in Sources */,
 				D5232C592475F92B00236FFD /* ImageCache.swift in Sources */,
 				D5232C5B2475F92B00236FFD /* Logger.swift in Sources */,

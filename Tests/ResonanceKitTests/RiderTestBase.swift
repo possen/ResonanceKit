@@ -12,7 +12,7 @@ import ResonanceKit
 
 class TestBase: XCTestCase {
     var jsonMockServer: JSONMockServer!
-    var mockSession: Session!
+    var mockSession: JSONSession!
 
     private var baseURL: URL {
         let testBundle = Bundle(for: type(of: self))
@@ -23,7 +23,7 @@ class TestBase: XCTestCase {
         do {
             jsonMockServer = try JSONMockServer(baseURL: baseURL)
             let jsonMockServerSession = JSONMockServerSession(mockServer: jsonMockServer)
-            let mockSession = Session(baseURL: URL(string: "https://mocktest.com")!)
+            let mockSession = JSONSession(baseURL: URL(string: "https://mocktest.com")!)
             mockSession.urlSession = jsonMockServerSession
             self.mockSession = mockSession
         } catch let error {
