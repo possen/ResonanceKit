@@ -24,7 +24,7 @@ public enum HTTPMethod: String {
 /// JSONRequest that will make a JSONRequest and will directly decode the response object in to the parameterized
 /// model object.
 ///
-public final class JSONRequest<Model: Decodable>: NetworkClient {
+public final class JSONRequest<Model: Decodable, ErrorModel: Decodable & CustomStringConvertible>: NetworkClient {
 
     /// Errors thrown.
     public enum RESTRequestError: LocalizedError {
@@ -44,13 +44,6 @@ public final class JSONRequest<Model: Decodable>: NetworkClient {
         }
     }
     
-    ///
-    /// Services that return detailed errors can use this to decode those responses.
-    ///
-    public struct JSONResponseError: Decodable, Error {
-        public let jsonError: [String: String]
-    }
-
     private let url: URL
     private let headers: [String: String]
     private let method: HTTPMethod
@@ -180,9 +173,6 @@ public final class JSONRequest<Model: Decodable>: NetworkClient {
         return try perform(request: request)
     }
     
-    public struct ErrorMessage: Decodable {
-        let nonFieldErrors: [String]
-    }
     
     ///
     /// Makes the network request using a URLRequest.
@@ -207,20 +197,15 @@ public final class JSONRequest<Model: Decodable>: NetworkClient {
             promise.success(object)
             return promise
         } else {
-            let errorMessage = try? decoder.decode(ErrorMessage.self, from: data)
-            guard let errData = errorMessage else {
-                let result = String(data: result.data, encoding: .utf8)
-                guard let decoded = result else {
-                    throw RESTRequestError.unableToDecodeErrorResponse
-                }
-                logger.debug(decoded)
-                throw RESTRequestError.statusCodeResponse(statusCode: status, message: decoded)
+            if let errorMessage = try? decoder.decode(ErrorModel.self, from: data) {
+                logger.debug(errorMessage.description)
+                let error = RESTRequestError.statusCodeResponse(
+                    statusCode: status,
+                    message: errorMessage.description
+                )
+                throw error
             }
-            let error = RESTRequestError.statusCodeResponse(
-                statusCode: status,
-                message: errData.nonFieldErrors.reduce("") { $0 + $1 }
-            )
-            throw error
+            throw RESTRequestError.unableToDecodeErrorResponse
         }
     }
     

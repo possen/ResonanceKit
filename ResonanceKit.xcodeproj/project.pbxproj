@@ -98,8 +98,8 @@
 			children = (
 				D5232C672475FA5300236FFD /* Mocks */,
 				D5232C2E2475F92B00236FFD /* ResonanceKitTests.swift */,
-				D5232C2F2475F92B00236FFD /* Info.plist */,
 				D5232C302475F92B00236FFD /* TestBase.swift */,
+				D5232C2F2475F92B00236FFD /* Info.plist */,
 			);
 			path = ResonanceKitTests;
 			sourceTree = "<group>";

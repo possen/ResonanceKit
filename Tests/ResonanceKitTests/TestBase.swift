@@ -11,6 +11,14 @@ import XCTest
 import ResonanceKit
 
 class TestBase: XCTestCase {
+    
+    enum TestError: String, Error, Decodable, CustomStringConvertible {
+        var description: String {
+            return self.rawValue
+        }
+        
+        case general
+    }
     var jsonMockServer: JSONMockServer!
     var mockSession: JSONSession!
 
