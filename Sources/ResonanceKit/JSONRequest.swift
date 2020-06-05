@@ -161,15 +161,21 @@ public final class JSONRequest<Model: Decodable, ErrorModel: Decodable & CustomS
     @discardableResult public func perform(
         method: HTTPMethod? = nil,
         command: String = "",
+        url: URL? = nil,
         parameters: [String: String] = [:],
         body: Data? = nil
     ) throws -> CoFuture<Model> {
-        let request = try buildRequest(
-            method: method ?? self.method,
-            parameters: parameters,
-            command: command,
-            body: body
-        )
+        let request: URLRequest
+        if let url = url {
+            request = URLRequest(url: url)
+        } else {
+            request = try buildRequest(
+                method: method ?? self.method,
+                parameters: parameters,
+                command: command,
+                body: body
+            )
+        }
         return try perform(request: request)
     }
     

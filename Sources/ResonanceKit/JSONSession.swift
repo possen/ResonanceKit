@@ -75,6 +75,7 @@ internal protocol NetworkClient {
     func perform(
         method: HTTPMethod?,
         command: String,
+        url: URL?,
         parameters: [String: String],
         body: Data?
     ) throws -> CoFuture<Model>
