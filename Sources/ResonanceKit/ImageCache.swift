@@ -17,7 +17,7 @@ class ImageCache {
     let cacheQueue = DispatchQueue(label: "cache", qos: .utility)
     private var cache : [String: (timeCount: Int, size: Int, image: UIImage)] = [:]
     private var timeCount = 0
-    let cacheSize = 10_000_000
+    let cacheSize = 100_000_000
 
     static var shared = ImageCache()
 
