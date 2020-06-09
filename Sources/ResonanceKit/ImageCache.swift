@@ -60,13 +60,14 @@ class ImageCache {
 
 extension UIImageView {
 
-    public func loadImageAtURL(_ urlOrig: URL, index: Int) {
+    public func loadImageAtURL(_ urlOrig: URL, index: Int, completion: @escaping (UIImage?, Int) -> Void) {
         tag = index
         UIImageView.loadImageAtURLCache(urlOrig, index: index) { (image, url, index) in
             if self.tag == index {
                 DispatchQueue.main.async {
                     self.image = image
                     self.setNeedsLayout()
+                    completion(image, index)
                 }
             }
         }
