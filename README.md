@@ -15,7 +15,7 @@ structure on the real server and returning the same `JSON` for those requests yo
 * A convineient way of printing out the request so you can easily paste it into `curl` for debugging requests.
 
 # How to use
-Simply import using Swift Package manager `https://github.com/possen/ResonanceKit.git` then `import ResonanceKit` and `import SwiftCoroutines` in files
+Simply import using Swift Package Manager `https://github.com/possen/ResonanceKit.git` then `import ResonanceKit` and `import SwiftCoroutines` in files
 that need to make network requests.
 
 Create a session with your base URL: 
@@ -26,11 +26,11 @@ Setup your decoding strategies:
 
     session.keyDecodingStrategy = .convertFromSnakeCase
     
-Similar properties exist for encoding an object to send to the server body. 
+Similar properties exist for encoding an object to send to the request body. 
    
 From there just create a request object with the decodable type of the object you need. Then perform your network request where `Person` is `Decodable`:
 
-    let request = JSONRequest<Person, ErrorResponse>(
+    let request = JSONRequest<People, ErrorResponse>(
         method: .get,
         path: "api/1.0/people/
         session: session
@@ -40,6 +40,36 @@ From there just create a request object with the decodable type of the object yo
 The call must be wrapped in the call to `DispatchQueue.main.startCoroutine()` at some point in your request call stack, this can be high up in your
 `NetworkController` just so long as it is in the callstack of the request. As mentioned earlier, you don't have to put it on the main thread, but 
 it won't block because it utilises CoRoutines. Which are similar to coooperative multithreading. 
+
+### Example Person Model Object:
+
+    struct People: Decodable {
+        var count: Int
+        let next: URL?
+        var results: [Person]
+    }
+
+    struct Person: Decodable, CustomStringConvertible, Hashable {
+
+        var description: String {
+            return name
+        }
+
+        let name: String
+        let birthYear: String
+        let eyeColor: String
+        let height: String
+        let mass: String
+        let skinColor: String
+        let homeworld: URL
+        let films: [URL]
+        let species: [URL]
+        let starships: [URL]
+        let vehicles: [URL]
+        let created: Date
+        let edited: Date
+        let url: URL
+    }
 
 ## To use Testing 
 
@@ -51,7 +81,7 @@ file which has the following structure which is an array so you can have multipl
 * A `method` section to match the type of request
 * A `response` section which is the JSON response as if it were coming back from real server
 
-### Example Mock Respons put in folder Mocks/People.json:
+### Example Mock Response put in folder Mocks/People.json:
 
         [{
             "request": {},
