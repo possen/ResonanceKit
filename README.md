@@ -1,6 +1,6 @@
 # ResonanceKit
 ResonanceKit is a very lightweight framework, compared to something like AlamoFire, for async JSON REST requests utilizing the `Codable` protocols to 
-get the model objects from the server. It is pure Swift. It utilizes Coroutines to allow awaiting on main thread or any other thread you like. 
+get the model objects from the server. It is pure Swift. It utilizes Coroutines to allow awaiting on main dispatch queue or any other queue you like. 
 
 In addition to handing the decoding and encoding requests, it uses Await symantics so that you can make multiple requests as if they are sequential
 before returning the final result. This greatly simplifies your code and avoids callback hell. Eventually coroutine support will be built into, likely, 
@@ -38,7 +38,7 @@ From there just create a request object with the decodable type of the object yo
     return try request.perform(parameters: ["search": filter, "page": String(page)]).await()
 
 The call must be wrapped in the call to `DispatchQueue.main.startCoroutine()` at some point in your request call stack, this can be high up in your
-`NetworkController` just so long as it is in the callstack of the request. As mentioned earlier, you don't have to put it on the main thread, but 
+`NetworkController` just so long as it is in the callstack of the request. As mentioned earlier, you don't have to put it on the main queue, but 
 it won't block because it utilises CoRoutines. Which are similar to coooperative multithreading. 
 
 ### Example Person Model Object:
