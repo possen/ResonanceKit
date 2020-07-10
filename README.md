@@ -77,7 +77,7 @@ Each file in that folder structure is a JSON
 file which has the following structure which is an array so you can have multiple responses in the same file:
 
 * A `request` section to validate the matching of the request:
-* A `status` section to simulate the different responses
+* A `status` section to simulate the different response codes
 * A `method` section to match the type of request
 * A `response` section which is the JSON response as if it were coming back from real server
 
@@ -156,6 +156,6 @@ file which has the following structure which is an array so you can have multipl
 
 # Dependencies
 The dependencies are meant to keep it as lightweight as possible and as system support becomes available, I will try to eliminate these.
-* SwiftCoroutines - for coroutine support
+* SwiftCoroutines - for coroutine support really nice package for doing await and coroutine support. 
 * SwiftyBeaver - for logging requests. Uses my fork of it to allow bundling as a `Built for Distribution` flag which does not work due to a module namespace issue,
 Would use new logging announced at WWDC 2020 but that would limit the use to prerelease software. 
