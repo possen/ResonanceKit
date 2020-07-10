@@ -6,7 +6,7 @@ In addition to handing the decoding and encoding requests, it uses Await symanti
 before returning the final result. This greatly simplifies your code and avoids callback hell. Eventually coroutine support will be built into, likely, 
 Swift 6, and will be the way to make concurrent network requests in the future.
 
-## Built in testing mock server
+## Built-in mock server for testing
 It provides a injectable mock session that simulates talking to the real server, by putting your requests in a folder structure that mimics the folder 
 structure on the real server and returning the same `JSON` for those requests you can run tests quickly and reliably.
 
